@@ -128,7 +128,7 @@
                 {
                     "name": "",
                     "id": "6ea303b6-1a98-4a3b-9bb6-bb5a714187d9",
-                    "path": "<Keyboard>/enter",
+                    "path": "<Mouse>/leftButton",
                     "interactions": "Press(behavior=2)",
                     "processors": "",
                     "groups": "",
