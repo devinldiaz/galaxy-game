@@ -136,6 +136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Laser (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2581794087033058041, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056438506526806510, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3342817751361019844, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.5
@@ -1198,6 +1206,7 @@ GameObject:
   - component: {fileID: 2050070089}
   - component: {fileID: 2050070090}
   - component: {fileID: 2050070091}
+  - component: {fileID: 2050070092}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Untagged
@@ -1271,6 +1280,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2050070092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2050070088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d461f9342b75f22479066aa8cd41453d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerWeapon
+  lasers: []
 --- !u!1 &2067295149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,6 +1430,10 @@ PrefabInstance:
     - target: {fileID: 3056438506526806510, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
       propertyPath: CollisionModule.type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056438506526806510, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
+      propertyPath: EmissionModule.enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3056438506526806510, guid: f6ae7c0323612e54989c73ee207de97b, type: 3}
       propertyPath: CollisionModule.enabled
