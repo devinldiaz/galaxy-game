@@ -5,6 +5,8 @@ public class PlayerWeapon : MonoBehaviour
 {
     [SerializeField] GameObject[] lasers;
     [SerializeField] RectTransform crosshair;
+    [SerializeField] Transform targetPoint;
+    [SerializeField] float targetDistance = 50f;
 
     void Start(){
         Cursor.visible = false;
@@ -13,6 +15,7 @@ public class PlayerWeapon : MonoBehaviour
     void Update()
     {
         MoveCrossHair();
+        MoveTargetPoint();
     }
 
     public void OnFire(InputValue value)
@@ -25,6 +28,12 @@ public class PlayerWeapon : MonoBehaviour
 
     void MoveCrossHair(){
         crosshair.position = Input.mousePosition;
+    }
+
+    void MoveTargetPoint()
+    {
+        Vector3 targetPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, targetDistance);
+        targetPoint.position = Camera.main.ScreenToWorldPoint(targetPosition);
     }
 }
 
