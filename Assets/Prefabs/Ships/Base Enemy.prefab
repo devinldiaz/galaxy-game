@@ -71,6 +71,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
   explosion: {fileID: 422415925915284834, guid: 808d77801fd9aa1409c1e82ce0d44afa, type: 3}
   hitPoints: 10
+  scoreValue: 100
 --- !u!65 &718435045966600011
 BoxCollider:
   m_ObjectHideFlags: 0
